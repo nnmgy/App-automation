@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite"   parallel="tests" thread-count="10">
+ <!--千万记得ProtID 开启-->
+    <test name="Test" >
+    <classes>
+       <class name="Tmall_One.Get_mall.ParallelClassesTestOne"/>
+      <!--    <class name="com.fanli.Automation.Version.apps.test1"/>
+           <class name="com.fanli.Automation.Version.apps.test2"/> -->
+    </classes>
+    </test> <!-- Test -->
+ 
+    <test name="Test1" >
+    <classes>
+       <class name="Tmall_One.Get_mall.ParallelClassesTestTWO"/>
+    </classes>
+    </test> 
+
+   <!--  <test name="Test2" >
+    <classes>
+       <class name="Tmall_One.Get_mall.ParallelClassesTestThree"/>
+    </classes>
+    </test>    -->
+    
+  <listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter" />
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+</listeners> 
+</suite> <!-- Suite -->

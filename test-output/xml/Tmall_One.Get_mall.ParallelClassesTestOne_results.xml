@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="2"
+           failures="2"
+           errors="0"
+           skipped="0"
+           time="9561.140">
+  <properties />
+            <testcase name="afterClass" time="0.000" classname="Tmall_One.Get_mall.ParallelClassesTestOne">
+                <failure type="org.openqa.selenium.remote.UnreachableBrowserException"
+                  message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
+System info: host: &apos;WIN-NP5128&apos;, ip: &apos;192.168.2.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'WIN-NP5128', ip: '192.168.2.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_17'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:185)
+  org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
+  Tmall_One.Get_mall.ParallelClassesTestOne.afterClass(ParallelClassesTestOne.java:47)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:601)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+  org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+  java.util.concurrent.FutureTask.run(FutureTask.java:166)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+  java.lang.Thread.run(Thread.java:722)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4727 [/127.0.0.1] failed: Connection refused: connect
+  org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+  org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+  org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+  org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+  org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+  org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+  org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+  org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+  org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+  org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+  org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:185)
+  org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
+  Tmall_One.Get_mall.ParallelClassesTestOne.afterClass(ParallelClassesTestOne.java:47)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:601)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+  org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+  java.util.concurrent.FutureTask.run(FutureTask.java:166)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+  java.lang.Thread.run(Thread.java:722)
+Caused by: java.net.ConnectException: Connection refused: connect
+  java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+  java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+  java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+  java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+  java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+  java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+  java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+  java.net.Socket.connect(Socket.java:579)
+  org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+  org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+  org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+  org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+  org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+  org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+  org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+  org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+  org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+  org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+  org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+  org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:185)
+  org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
+  Tmall_One.Get_mall.ParallelClassesTestOne.afterClass(ParallelClassesTestOne.java:47)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:601)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+  org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+  java.util.concurrent.FutureTask.run(FutureTask.java:166)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+  java.lang.Thread.run(Thread.java:722)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="testMethodOne" time="9561.140" classname="Tmall_One.Get_mall.ParallelClassesTestOne">
+                <failure type="org.openqa.selenium.WebDriverException"
+                  message="An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2 milliseconds
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
+System info: host: &apos;WIN-NP5128&apos;, ip: &apos;192.168.2.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Session ID: f19df191-0072-46bf-af79-2634861f6d52
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{platform=LINUX, javascriptEnabled=true, appActivity=com.taobao.tao.welcome.Welcome, browserName=Android, networkConnectionEnabled=true, udid=192.168.153.101:5555, desired={platformVersion=4.3, deviceName=192.168.153.101:5555, platformName=Android, appActivity=com.taobao.tao.welcome.Welcome, device=Android, udid=192.168.153.101:5555, appPackage=com.taobao.taobao}, locationContextEnabled=false, appPackage=com.taobao.taobao, platformVersion=4.4.4, databaseEnabled=false, platformName=Android, deviceName=192.168.153.101:5555, webStorageEnabled=false, device=Android, warnings={}, takesScreenshot=true}]"
+              >
+<![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'WIN-NP5128', ip: '192.168.2.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_17'
+Session ID: f19df191-0072-46bf-af79-2634861f6d52
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{platform=LINUX, javascriptEnabled=true, appActivity=com.taobao.tao.welcome.Welcome, browserName=Android, networkConnectionEnabled=true, udid=192.168.153.101:5555, desired={platformVersion=4.3, deviceName=192.168.153.101:5555, platformName=Android, appActivity=com.taobao.tao.welcome.Welcome, device=Android, udid=192.168.153.101:5555, appPackage=com.taobao.taobao}, locationContextEnabled=false, appPackage=com.taobao.taobao, platformVersion=4.4.4, databaseEnabled=false, platformName=Android, deviceName=192.168.153.101:5555, webStorageEnabled=false, device=Android, warnings={}, takesScreenshot=true}]
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+  io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:293)
+  io.appium.java_client.MultiTouchAction.perform(MultiTouchAction.java:74)
+  io.appium.java_client.AppiumDriver.tap(AppiumDriver.java:334)
+  Tmall_One.Get_mall.ParallelClasses.Case(ParallelClasses.java:33)
+  Tmall_One.Get_mall.ParallelClassesTestOne.testMethodOne(ParallelClassesTestOne.java:38)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:601)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+  java.util.concurrent.FutureTask.run(FutureTask.java:166)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+  java.lang.Thread.run(Thread.java:722)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+  
+</testsuite>
