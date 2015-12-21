@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tmall_One.Get_mall.ParallelClassesTestOne">
+      <class name="Tmall_One.Get_mall.ParallelClassesTestTWO">
         <methods>
-          <include name="beforeClass"/>
           <include name="testMethodOne"/>
-          <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- Tmall_One.Get_mall.ParallelClassesTestOne -->
+      </class> <!-- Tmall_One.Get_mall.ParallelClassesTestTWO -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

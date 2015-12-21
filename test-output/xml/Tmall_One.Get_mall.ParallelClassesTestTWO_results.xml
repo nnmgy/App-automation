@@ -1,173 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test1"
-           tests="2"
-           failures="2"
+<testsuite name="sanxing"
+           tests="1"
+           failures="1"
            errors="0"
            skipped="0"
-           time="9558.750">
+           time="253.418">
   <properties />
-            <testcase name="afterClass" time="0.000" classname="Tmall_One.Get_mall.ParallelClassesTestTWO">
-                <failure type="org.openqa.selenium.remote.UnreachableBrowserException"
-                  message="Error communicating with the remote browser. It may have died.
+            <testcase name="testMethodOne" time="253.418" classname="Tmall_One.Get_mall.ParallelClassesTestTWO">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 50.51 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
-System info: host: &apos;WIN-NP5128&apos;, ip: &apos;192.168.2.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
-Driver info: driver.version: RemoteWebDriver"
-              >
-<![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'WIN-NP5128', ip: '192.168.2.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_17'
-Driver info: driver.version: RemoteWebDriver
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
-  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:185)
-  org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
-  Tmall_One.Get_mall.ParallelClassesTestTWO.afterClass(ParallelClassesTestTWO.java:46)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:601)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-  org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
-  org.testng.TestRunner.privateRun(TestRunner.java:767)
-  org.testng.TestRunner.run(TestRunner.java:617)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-  java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
-  java.util.concurrent.FutureTask.run(FutureTask.java:166)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-  java.lang.Thread.run(Thread.java:722)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused: connect
-  org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
-  org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
-  org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-  org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-  org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-  org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-  org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-  org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-  org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-  org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-  org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:185)
-  org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
-  Tmall_One.Get_mall.ParallelClassesTestTWO.afterClass(ParallelClassesTestTWO.java:46)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:601)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-  org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
-  org.testng.TestRunner.privateRun(TestRunner.java:767)
-  org.testng.TestRunner.run(TestRunner.java:617)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-  java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
-  java.util.concurrent.FutureTask.run(FutureTask.java:166)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-  java.lang.Thread.run(Thread.java:722)
-Caused by: java.net.ConnectException: Connection refused: connect
-  java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-  java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
-  java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-  java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-  java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-  java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
-  java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
-  java.net.Socket.connect(Socket.java:579)
-  org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-  org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
-  org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
-  org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-  org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-  org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-  org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-  org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-  org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-  org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-  org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-  org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:185)
-  org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
-  Tmall_One.Get_mall.ParallelClassesTestTWO.afterClass(ParallelClassesTestTWO.java:46)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:601)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-  org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
-  org.testng.TestRunner.privateRun(TestRunner.java:767)
-  org.testng.TestRunner.run(TestRunner.java:617)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-  java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
-  java.util.concurrent.FutureTask.run(FutureTask.java:166)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-  java.lang.Thread.run(Thread.java:722)
-]]>
-      </failure>
-
-          </testcase>
-            <testcase name="testMethodOne" time="9558.750" classname="Tmall_One.Get_mall.ParallelClassesTestTWO">
-                <failure type="org.openqa.selenium.WebDriverException"
-                  message="An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2 milliseconds
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;
-System info: host: &apos;WIN-NP5128&apos;, ip: &apos;192.168.2.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
-Session ID: 1f817370-c7b4-4513-b570-742642a8bce8
+System info: host: &apos;alibaba-103276N&apos;, ip: &apos;30.17.1.150&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{platform=LINUX, javascriptEnabled=true, appActivity=com.taobao.tao.welcome.Welcome, browserName=Android, networkConnectionEnabled=true, udid=192.168.153.102:5555, desired={platformVersion=4.4, deviceName=192.168.153.102:5555, platformName=Android, appActivity=com.taobao.tao.welcome.Welcome, device=Android, udid=192.168.153.102:5555, appPackage=com.taobao.taobao}, locationContextEnabled=false, appPackage=com.taobao.taobao, platformVersion=4.4.4, databaseEnabled=false, platformName=Android, deviceName=192.168.153.102:5555, webStorageEnabled=false, device=Android, warnings={}, takesScreenshot=true}]"
+Capabilities [{appPackage=com.sds.android.ttpod, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=38f8d32d, platform=LINUX, appActivity=com.sds.android.ttpod.EntryActivity, desired={appPackage=com.sds.android.ttpod, appActivity=com.sds.android.ttpod.EntryActivity, platformVersion=4.4, udid=38f8d32d, platformName=Android, device=Android, deviceName=38f8d32d}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=38f8d32d, platformName=Android, device=Android}]
+Session ID: f992d0db-4544-49fe-921e-487a3943b3e8"
               >
-<![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2 milliseconds
+<![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 50.51 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'WIN-NP5128', ip: '192.168.2.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_17'
-Session ID: 1f817370-c7b4-4513-b570-742642a8bce8
+System info: host: 'alibaba-103276N', ip: '30.17.1.150', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{platform=LINUX, javascriptEnabled=true, appActivity=com.taobao.tao.welcome.Welcome, browserName=Android, networkConnectionEnabled=true, udid=192.168.153.102:5555, desired={platformVersion=4.4, deviceName=192.168.153.102:5555, platformName=Android, appActivity=com.taobao.tao.welcome.Welcome, device=Android, udid=192.168.153.102:5555, appPackage=com.taobao.taobao}, locationContextEnabled=false, appPackage=com.taobao.taobao, platformVersion=4.4.4, databaseEnabled=false, platformName=Android, deviceName=192.168.153.102:5555, webStorageEnabled=false, device=Android, warnings={}, takesScreenshot=true}]
+Capabilities [{appPackage=com.sds.android.ttpod, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=38f8d32d, platform=LINUX, appActivity=com.sds.android.ttpod.EntryActivity, desired={appPackage=com.sds.android.ttpod, appActivity=com.sds.android.ttpod.EntryActivity, platformVersion=4.4, udid=38f8d32d, platformName=Android, device=Android, deviceName=38f8d32d}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, udid=38f8d32d, platformName=Android, device=Android}]
+Session ID: f992d0db-4544-49fe-921e-487a3943b3e8
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-  java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:422)
   org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
   org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
   io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-  io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:293)
-  io.appium.java_client.MultiTouchAction.perform(MultiTouchAction.java:74)
-  io.appium.java_client.AppiumDriver.tap(AppiumDriver.java:334)
-  Tmall_One.Get_mall.ParallelClasses.Case(ParallelClasses.java:33)
-  Tmall_One.Get_mall.ParallelClassesTestTWO.testMethodOne(ParallelClassesTestTWO.java:38)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+  org.openqa.selenium.By$ById.findElement(By.java:214)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+  Tmall_One.Get_mall.ParallelClasses.Case(ParallelClasses.java:11)
+  Tmall_One.Get_mall.ParallelClassesTestTWO.testMethodOne(ParallelClassesTestTWO.java:41)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:601)
+  java.lang.reflect.Method.invoke(Method.java:497)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
   org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
   org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -180,11 +55,10 @@ Capabilities [{platform=LINUX, javascriptEnabled=true, appActivity=com.taobao.ta
   org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
   org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
   org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-  java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
-  java.util.concurrent.FutureTask.run(FutureTask.java:166)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-  java.lang.Thread.run(Thread.java:722)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
 ]]>
       </failure>
 

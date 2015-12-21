@@ -2,7 +2,9 @@ package Tmall_One.Get_mall;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+
 import io.appium.java_client.android.AndroidDriver;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -12,6 +14,8 @@ import org.testng.annotations.Test;
 
 public class ParallelClassesTestThree
 {   public static  AndroidDriver driver ;
+	String ip="127.0.0.1";
+	String port ="4724";
     @BeforeClass
     public void beforeClass() throws MalformedURLException {
         long id = Thread.currentThread().getId();
@@ -23,7 +27,7 @@ public class ParallelClassesTestThree
         capabilities.setCapability("platformVersion", "4.3");  
         capabilities.setCapability("appPackage", "com.taobao.taobao");  
         capabilities.setCapability("appActivity", "com.taobao.tao.welcome.Welcome");
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4727/wd/hub"), capabilities);
+        driver = new AndroidDriver(new URL("http://"+ip+":"+port+"/wd/hub"), capabilities);
 	    driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
     }
  

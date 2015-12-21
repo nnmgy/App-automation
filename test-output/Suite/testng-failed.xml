@@ -5,7 +5,7 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="Test(failed)" parallel="tests">
+  <test name="xiaomi(failed)" parallel="tests">
     <classes>
       <class name="Tmall_One.Get_mall.ParallelClassesTestTWO">
         <methods>
@@ -21,22 +21,22 @@
         </methods>
       </class> <!-- Tmall_One.Get_mall.ParallelClassesTestOne -->
     </classes>
-  </test> <!-- Test(failed) -->
-  <test name="Test1(failed)" parallel="tests">
+  </test> <!-- xiaomi(failed) -->
+  <test name="sanxing(failed)" parallel="tests">
     <classes>
+      <class name="Tmall_One.Get_mall.ParallelClassesTestTWO">
+        <methods>
+          <include name="afterClass"/>
+          <include name="testMethodOne"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- Tmall_One.Get_mall.ParallelClassesTestTWO -->
       <class name="Tmall_One.Get_mall.ParallelClassesTestOne">
         <methods>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- Tmall_One.Get_mall.ParallelClassesTestOne -->
-      <class name="Tmall_One.Get_mall.ParallelClassesTestTWO">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="testMethodOne"/>
-        </methods>
-      </class> <!-- Tmall_One.Get_mall.ParallelClassesTestTWO -->
     </classes>
-  </test> <!-- Test1(failed) -->
+  </test> <!-- sanxing(failed) -->
 </suite> <!-- Failed suite [Suite] -->

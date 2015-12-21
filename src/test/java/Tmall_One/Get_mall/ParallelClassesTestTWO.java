@@ -19,7 +19,7 @@ import PcServices.PcServices;
 public class ParallelClassesTestTWO
 {   public static  AndroidDriver driver ;
     String ip="127.0.0.1";
-    String port ="4723";
+    String port ="4724";
     @BeforeClass
     public void beforeClass() throws MalformedURLException, InterruptedException {
     	PcServices.AppiumServices(ip,port);
@@ -28,15 +28,14 @@ public class ParallelClassesTestTWO
         System.out.println("Before test-class. Thread id is: " + id);
         DesiredCapabilities capabilities = new DesiredCapabilities(); 
         capabilities.setCapability("device","Android");
-        capabilities.setCapability("deviceName", "192.168.82.102:5555");
-        capabilities.setCapability("udid", "192.168.82.102:5555");
+        capabilities.setCapability("deviceName", "38f8d32d");
+        capabilities.setCapability("udid", "38f8d32d");
         capabilities.setCapability("platformVersion", "4.4");  
         capabilities.setCapability("appPackage", "com.sds.android.ttpod");  
-        capabilities.setCapability("appActivity", "com.sds.android.ttpod.activities.MainActivity");
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+        capabilities.setCapability("appActivity", "com.sds.android.ttpod.EntryActivity");
+        driver = new AndroidDriver(new URL("http://"+ip+":"+port+"/wd/hub"), capabilities);
 	    driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
     }
- 
     @Test
     public void testMethodOne() throws InterruptedException {
     	 ParallelClasses.Case(driver);
